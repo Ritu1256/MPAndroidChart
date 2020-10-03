@@ -26,6 +26,16 @@ public class PieData extends ChartData<IPieDataSet> {
     public PieData(IPieDataSet dataSet) {
         super(dataSet);
     }
+    
+    
+
+    ArrayList<String> xVals;
+    PieDataSet dataSet;
+
+    public PieData(ArrayList<String> xVals,PieDataSet dataSet){
+    this.xVals = xVals;
+    this.dataSet = dataSet;
+    }
 
     /**
      * Sets the PieDataSet this data object should represent.
